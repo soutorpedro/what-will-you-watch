@@ -14,8 +14,6 @@ function App() {
   const [favourites, setFavourites] = useState([]);
   const [searchValue, setSearchValue] = useState ('');
 
-  console.log(process.env);
-
   async function getMovieRequest(searchValue){
     const apiUrl = `https://www.omdbapi.com/?s=${searchValue}&apikey=${process.env.REACT_APP_API_KEY}`;
 
